@@ -1,6 +1,8 @@
 module github.com/sigstore/scaffolding
 
-go 1.20
+go 1.21.0
+
+toolchain go1.22.9
 
 require (
 	chainguard.dev/exitdir v0.0.1
@@ -157,7 +159,7 @@ require (
 	github.com/opencontainers/image-spec v1.1.0-rc3 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
 	github.com/pborman/uuid v1.2.1 // indirect
-	github.com/pelletier/go-toml/v2 v2.0.8 // indirect
+	github.com/pelletier/go-toml/v2 v2.2.3 // indirect
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/prometheus/client_model v0.4.0 // indirect
