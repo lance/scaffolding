@@ -1,5 +1,5 @@
 # Build the managectroots binary
-FROM registry.access.redhat.com/ubi9/go-toolset@sha256:e91cbbd0b659498d029dd43e050c8a009c403146bfba22cbebca8bcd0ee7925f AS build-env
+FROM registry.access.redhat.com/ubi9/go-toolset@sha256:a7d68b27e36edc6befe7dde94dd1db34c728a47df602998bd66c737d84813b5a AS build-env
 WORKDIR /ctlog-managectroots
 RUN git config --global --add safe.directory /ctlog-managectroots
 
