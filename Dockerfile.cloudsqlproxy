@@ -8,7 +8,7 @@ USER root
 RUN make build-cloudsqlproxy
 
 # Install server
-FROM registry.access.redhat.com/ubi9/ubi-minimal@sha256:9c810eccada0cc6f25b46eeeea4516bab01828faef4fdd2fe49c760518b90dd1
+FROM registry.access.redhat.com/ubi9/ubi-minimal@sha256:a50731d3397a4ee28583f1699842183d4d24fadcc565c4688487af9ee4e13a44
 COPY --from=build-env /cloudsqlproxy/cloudsqlproxy /usr/local/bin/cloudsqlproxy
 RUN chown root:0 /usr/local/bin/cloudsqlproxy && chmod g+wx /usr/local/bin/cloudsqlproxy
 
